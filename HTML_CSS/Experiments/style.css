@@ -3,6 +3,10 @@
     bottom: 0;
 }
 
+.body_experiments {
+    font-family: sans-serif;
+}
+
 .image_children {
     margin-top: 50px;
     display: grid;
@@ -10,4 +14,57 @@
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(1, 1fr);
     gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+h1 {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.paragraphs {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.h2_main {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.img_about_me {
+    border-radius: 10px;
+}
+
+.input_application {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.button_application {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
