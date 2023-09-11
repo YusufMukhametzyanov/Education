@@ -19,12 +19,13 @@ let test = true;
 // Task 3
 
 // В переменной day лежит какое - то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число(в первую, вторую или третью).
-let getNumber = prompt(`Введите число от 1 до 31`);
-if (getNumber > 1 && getNumber < 10) {
+let getNumber = Math.ceil(Math.random() * 31);
+if (getNumber > 1 && getNumber <= 10) {
     alert(`Число ${getNumber} попадает в первую декаду месяца`);
-} else if (getNumber > 10 && getNumber < 20) {
+} else
+if (getNumber >= 11 && getNumber <= 20) {
     alert(`ْЧисло ${getNumber} попадает во вторую декаду месяца`);
-} else if (getNumber > 20 && getNumber <= 31) { alert(`ْЧисло ${getNumber} попадает в третью декаду`); }
+} else if (getNumber >= 21 && getNumber <= 31) { alert(`ْЧисло ${getNumber} попадает в третью декаду`); }
 
 // Task 4
 
