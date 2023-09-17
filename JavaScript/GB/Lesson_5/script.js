@@ -31,26 +31,49 @@
 
 // Object metods
 
-// const car = {
-//     make: "Audi",
-//     model: "A5",
-//     year: 2023,
-//     color: "red",
-//     passengers: 2,
-//     power: 249,
-//     odometer: 0,
-//     engineIsStarted: false,
-//     startEngine: function () {
-//         this.engineIsStarted = true;
-//     },
-//     stopEngine: function () {
-//         this.engineIsStarted = false;
-//     },
-//     haveRoadTrip: function (distance) {
-//         if (this.engineIsStarted) {
-//             this.odometer += distance;
-//         } else {
-//             alert(`Сначала запустите двигатель! // startEngine();`)
-//         }
-//     },
-// };
+const car = {
+    make: "Audi",
+    model: "A5",
+    year: 2023,
+    color: "red",
+    passengers: 2,
+    power: 249,
+    odometer: 0,
+    engineIsStarted: false,
+    startEngine: function () {
+        this.engineIsStarted = true;
+    },
+    stopEngine: function () {
+        this.engineIsStarted = false;
+    },
+    haveRoadTrip: function (distance) {
+        if (this.engineIsStarted) {
+            this.odometer += distance;
+        } else {
+            alert(`Сначала запустите двигатель! // startEngine();`)
+        }
+    },
+};
+
+// Перебор значение объекта циклом for
+
+// for (const key in car) {
+//     console.log(`${key}: ${car[key]}`);
+// }
+
+// Преобразование объекта в массив
+// Ключей
+const carKeys = Object.keys(car);
+console.log(carKeys);
+// Значений
+// const carValues = Object.values(car);
+// console.log(carValues);
+// И ключей и значений
+// const carKeysAndValues = Object.entries(car);
+// console.log(carKeysAndValues);
+// Создание копии массива
+// const carMap = carKeys.map(index => index);
+// console.log(carMap);
+// carMap.push(1);
+// console.log(carMap);
+// console.log(carKeys);
