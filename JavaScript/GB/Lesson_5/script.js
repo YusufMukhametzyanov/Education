@@ -55,6 +55,7 @@ const car = {
     },
 };
 
+
 // Перебор значение объекта циклом for
 
 // for (const key in car) {
@@ -63,8 +64,8 @@ const car = {
 
 // Преобразование объекта в массив
 // Ключей
-const carKeys = Object.keys(car);
-console.log(carKeys);
+// const carKeys = Object.keys(car);
+// console.log(carKeys);
 // Значений
 // const carValues = Object.values(car);
 // console.log(carValues);
@@ -77,3 +78,21 @@ console.log(carKeys);
 // carMap.push(1);
 // console.log(carMap);
 // console.log(carKeys);
+
+// const arr = [1, 2, 3, 4, 5];
+// const arr2 = arr.filter(i => {
+//     if (i === 3) return false
+//     return true
+// });
+// console.log(arr2);
+
+// const sumArr = arr.reduce((acc, i) => {
+//     return acc + i;
+// }, 0);
+// console.log(sumArr);
+
+// const [n1, n2, n3] = arr;
+// console.log(n1, n2, n3);
+
+// const { make: make2, model, year2 = 2022, color } = car;
+// console.log(make2, year2);
