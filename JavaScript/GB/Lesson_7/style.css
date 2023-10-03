@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    width: 500px;
+    background-color: gray;
+    border-top-right-radius: 30px;
+}
