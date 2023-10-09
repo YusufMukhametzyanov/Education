@@ -4,10 +4,31 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
 }
 
 .heading {
     width: 500px;
     background-color: gray;
     border-top-right-radius: 30px;
+}
+
+.item {
+    color: blue;
+    border: 2px solid black;
+    padding: 16px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.item:hover {
+    background-color: aqua;
+}
+
+.item:active {
+    background-color: aquamarine;
+}
+
+.input {
+    border: 2px solid aqua;
 }
