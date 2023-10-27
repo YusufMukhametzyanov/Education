@@ -76,12 +76,13 @@
 //         body.appendChild(header2);
 // }
 
-const divContent = document.querySelector('.content');
-const btn = document.createElement('button');
-divContent.appendChild(btn);
-btn.textContent = 'Submit';
-btn.setAttribute('class', 'item');
+// const divContent = document.querySelector('.content');
+// const btn = document.createElement('button');
+// divContent.appendChild(btn);
+// btn.textContent = 'Submit';
+// btn.setAttribute('class', 'item');
 
-btn.onclick = function () {
-    btn.textContent = 'Text sent';
-}
+// btn.onclick = function () {
+//     btn.textContent = 'Text sent';
+// }
+
