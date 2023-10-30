@@ -119,16 +119,43 @@
 //     button6.setAttribute('class', 'click');
 // });
 
-const divContent = document.querySelector('.content');
-const btnSubmit = document.createElement('button');
-btnSubmit.textContent = 'Submit';
-divContent.append(btnSubmit);
+// const divContent = document.querySelector('.content');
+// const btnSubmit = document.createElement('button');
+// btnSubmit.textContent = 'Submit';
+// divContent.append(btnSubmit);
 
-// btnSubmit.onclick = () => {
+// // btnSubmit.onclick = () => {
+// //     btnSubmit.textContent = 'Text sent';
+// // };
+
+// btnSubmit.addEventListener('click', function (e) {
 //     btnSubmit.textContent = 'Text sent';
-// };
+// });
 
-btnSubmit.addEventListener('click', function (e) {
-    btnSubmit.textContent = 'Text sent';
+/* 1. Необходимо вывести сообщение в консоль "все теги прогрузились", когда все теги будут созданы браузером. */
+
+document.addEventListener('DOMContentLoaded', function (e) {
+    console.log('Loaded');
 });
 
+// 2. Необходимо вывести сообщение в консоль "страница загрузилась", когда все ресурсы страницы будут загружены.
+
+window.addEventListener('load', function (e) {
+    console.log('The page has loaded');
+});
+
+/* 3. При клике на какой-либо тег на странице в консоль должно выводиться сообщение наподобие:
+- Класс "super_element" присутствует в элементе "div".
+- сообщение должно определять присутствует или отсутствует класс "super_element" у элемента, а также выводить в нижнем регистре верный тег в данной строке, по которому был совершен клик.
+- Необходимо использовать делегирование. */
+
+const super_element = document.querySelector('.super_element');
+const body = document.querySelector('body');
+
+body.addEventListener('click', function (e) {
+    if (super_element === e.target) {
+        console.log('The "super_element" class is present in the "div" element')
+    } else {
+        console.log(e);
+    }
+});
