@@ -1,0 +1,23 @@
+/* .divError {
+    border: 1px solid red;
+    width: 234px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.divError:hover {
+    background-color: blueviolet;
+    transition: 3s;
+}
+
+.inputForTextError {
+    border: 2px solid red;
+}
+
+.inputForTextAccept {
+    border: 2px solid greenyellow;
+} */
+
+.error {
+    border-color: red;
+}
