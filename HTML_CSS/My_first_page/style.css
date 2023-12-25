@@ -108,6 +108,7 @@ p {
 
 .circle {
   grid-area: 2/3;
+  display: none;
 }
 
 .number_for_basket {

@@ -58,13 +58,14 @@ featuredItemsJS.forEach((element) => {
 const dataProductsJS = JSON.parse(dataProducts);
 
 const contentEl = document.querySelector(".content");
-
+const circleEl = document.querySelector(".circle");
 const content1ActiveEl = document.querySelectorAll(".content1_active");
 
 content1ActiveEl.forEach((element) => {
   element.addEventListener("click", function (e) {
     if (element.parentElement.parentElement.className === "content1") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -97,6 +98,7 @@ content1ActiveEl.forEach((element) => {
 
     if (element.parentElement.parentElement.className === "content2") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -128,6 +130,7 @@ content1ActiveEl.forEach((element) => {
     }
     if (element.parentElement.parentElement.className === "content3") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -159,6 +162,7 @@ content1ActiveEl.forEach((element) => {
     }
     if (element.parentElement.parentElement.className === "content4") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -190,6 +194,7 @@ content1ActiveEl.forEach((element) => {
     }
     if (element.parentElement.parentElement.className === "content5") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -221,6 +226,7 @@ content1ActiveEl.forEach((element) => {
     }
     if (element.parentElement.parentElement.className === "content6") {
       contentEl.style.display = "flex";
+      circleEl.style.display = "block";
       contentEl.insertAdjacentHTML(
         "beforeend",
         `
@@ -259,5 +265,6 @@ contentEl.addEventListener("click", function (e) {
   }
   if (contentEl.children.length === 1) {
     contentEl.style.display = "none";
+    circleEl.style.display = "none";
   }
 });
