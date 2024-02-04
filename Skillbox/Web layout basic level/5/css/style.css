@@ -193,17 +193,15 @@ body {
 
 .container-modules {
   margin: 0 auto;
-  width: 1169px;
+  padding-top: 50px;
+  width: 1170px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 
-.nav {
-  margin-top: 50px;
-}
-
 .logo-black {
   display: block;
+  margin-bottom: 25px;
   width: 137px;
   height: 30px;
 }
@@ -211,6 +209,7 @@ body {
 .link-index {
   display: inline-block;
   padding-left: 53px;
+  margin-bottom: 25px;
   font-size: 20px;
   color: #3f2aff;
   background-image: url("../img/Arrow.png");
@@ -219,7 +218,7 @@ body {
 }
 
 .header-modules {
-  margin: 0 0 60px 0;
+  margin: 0 0 50px 0;
   font-size: 60px;
   color: #3f2aff;
 }
@@ -227,11 +226,15 @@ body {
 .ul-modules {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 25px;
   font-size: 0;
 }
 
 .card-modules {
+  position: relative;
   display: inline-block;
+  margin-bottom: 25px;
+  padding: 205px 0 0 25px;
   width: 572px;
   height: 505px;
   box-shadow: 1px 1px 20px #eaeaea, -1px -1px 20px #eaeaea;
@@ -241,28 +244,13 @@ body {
   margin-right: 25px;
 }
 
-.card-modules:not(:nth-child(3)) {
-  margin-bottom: 25px;
-}
-
-.card-modules:nth-child(4) {
-  margin-bottom: 0;
-}
-
-.card-description {
-  position: relative;
-  margin: 200px 0 0 30px;
-  width: 522px;
-  height: 275px;
-}
-
-.card-description h2 {
+.card-modules-header {
   margin: 0;
   font-size: 40px;
   color: #3f2aff;
 }
 
-.card-description ul {
+.card-modules-ul {
   list-style-type: none;
   padding-left: 0;
   font-size: 20px;
@@ -271,8 +259,9 @@ body {
 
 .number-module {
   position: absolute;
-  right: 0;
-  margin-bottom: 0;
+  right: 25px;
+  bottom: 25px;
+  margin: 0;
   font-size: 40px;
   font-weight: normal;
   color: #eaeaea;
@@ -300,11 +289,12 @@ body {
 
 .button-modules {
   display: block;
-  margin: 70px auto;
+  margin: 0 auto 50px;
   border: 2px solid #3f2aff;
   width: 274px;
   height: 70px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   color: #3f2aff;
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.3s;
