@@ -1,0 +1,15 @@
+.error {
+  border-color: red;
+}
+
+.form-control {
+  border-color: green;
+}
+
+.hiddenElements {
+  visibility: hidden;
+}
+
+.visibleElements {
+  visibility: visible;
+}

@@ -55,20 +55,20 @@ body {
   width: 1170px;
 }
 
-.header-top {
+.main-title {
   margin: 0 0 40px;
 }
 
-.header2,
-.header3 {
+.header-sections {
+  margin: 0 0 10px;
+}
+
+.title-section {
   margin: 0 0 10px;
 }
 
 .figure-article {
   margin: 0 0 40px;
-}
-
-.figure-article figcaption {
   display: inline-block;
   width: 872px;
 }
@@ -82,12 +82,12 @@ body {
   margin: 0 0 40px;
 }
 
-.ul-from-header2 {
+.ul-sections {
   margin: 0;
   padding-left: 15px;
 }
 
-.li-from-header2:not(:last-child) {
+.li-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -100,6 +100,10 @@ body {
 .gray-box .text {
   width: 692px;
   margin-bottom: 10px;
+}
+
+.gray-box .text:last-child {
+  margin-bottom: 0;
 }
 
 .gray-box:not(:last-child) {

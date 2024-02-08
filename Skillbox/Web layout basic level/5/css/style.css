@@ -240,7 +240,7 @@ body {
   box-shadow: 1px 1px 20px #eaeaea, -1px -1px 20px #eaeaea;
 }
 
-.card-modules:not(:nth-child(2n)) {
+.card-modules:not(:nth-child(even)) {
   margin-right: 25px;
 }
 

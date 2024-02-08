@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Статья</title>
 </head>
 
 <body>
 
   <div class="container">
-    <h1 class="header-top">
+    <h1 class="main-title">
       <b>Правила организации отступов:</b> как сделать вёрстку гибкой и&nbsp;не&nbsp;допустить ошибок
     </h1>
     <p class="text">
@@ -29,22 +29,22 @@
     </p>
 
     <div class="gray-box">
-      <h2 class="header2">Содержаниe</h2>
+      <h2 class="header-sections">Содержаниe</h2>
       <p class="text">
         Первая из&nbsp;частей&nbsp;&mdash; HTML. Это начальная стадия соблюдения кодстайла, ведь любой сайт
         вы&nbsp;начинаете писать именно с&nbsp;этого языка. Давайте посмотрим на&nbsp;основные правила:
       </p>
-      <ul class="ul-from-header2">
-        <li class="li-from-header2"><a href="#1">Основные принципы работы с&nbsp;отступами</a></li>
-        <li class="li-from-header2"><a href="#2">Первый принцип: отступы от&nbsp;предыдущего к&nbsp;следующему</a></li>
-        <li class="li-from-header2"><a href="#3">Второй принцип: отступы задаются только между соседями</a></li>
-        <li class="li-from-header2"><a href="#4">Третий принцип: у&nbsp;последнего элемента группы обнуляем отступ</a>
+      <ul class="ul-sections">
+        <li class="li-item"><a href="#1">Основные принципы работы с&nbsp;отступами</a></li>
+        <li class="li-item"><a href="#2">Первый принцип: отступы от&nbsp;предыдущего к&nbsp;следующему</a></li>
+        <li class="li-item"><a href="#3">Второй принцип: отступы задаются только между соседями</a></li>
+        <li class="li-item"><a href="#4">Третий принцип: у&nbsp;последнего элемента группы обнуляем отступ</a>
         </li>
       </ul>
     </div>
 
     <div id="1">
-      <h3 class="header3">Основные принципы работы с отступами</h3>
+      <h3 class="title-section">Основные принципы работы с отступами</h3>
       <p class="text">
         У&nbsp;любого сайта или документа есть так называемый поток&nbsp;&mdash; порядок вывода объектов
         в&nbsp;документе.
@@ -57,7 +57,7 @@
     </div>
 
     <div id="2">
-      <h3 class="header3">
+      <h3 class="title-section">
         Отступы задаются от&nbsp;предыдущего элемента к&nbsp;следующему
       </h3>
       <p class="text">
@@ -88,7 +88,7 @@
     </div>
 
     <div id="3">
-      <h3 class="header3">Отступы задаются только между соседними элементами в потоке</h3>
+      <h3 class="title-section">Отступы задаются только между соседними элементами в потоке</h3>
       <p class="text">
         Если у&nbsp;блока нет соседа с&nbsp;левой стороны&nbsp;&mdash; задавать ему отступ слева нельзя. То&nbsp;же
         самое
@@ -110,7 +110,7 @@
     </div>
 
     <div id="4">
-      <h3 class="header3">Последнему элементу группы нужно обнулять отступ</h3>
+      <h3 class="title-section">Последнему элементу группы нужно обнулять отступ</h3>
       <p class="text">
         Это легко сделать с&nbsp;помощью псевдоклассов в&nbsp;CSS. Например, есть псевдокласс <b>:last-child</b>,
         который
@@ -130,7 +130,7 @@
         говорим следующее: &laquo;Задай отступ всем&nbsp;ul, но&nbsp;не&nbsp;последнему&raquo;.
       </p>
       <img class="image-article" src="img/6.jpg" alt="Скриншот кода CSS">
-      <h3 class="header3">Типичный пример: отступы в карточке</h3>
+      <h3 class="title-section">Типичный пример: отступы в карточке</h3>
       <p class="text">
         Рассмотрим типичный пример&nbsp;&mdash; реализацию карточки с&nbsp;контентом на&nbsp;сайте. Как здесь лучше
         поступить?
@@ -151,7 +151,7 @@
     </div>
 
     <div class="gray-box">
-      <h2 class="header2">Итог</h2>
+      <h2 class="header-sections">Итог</h2>
       <p class="text">
         Это основные правила организации отступов, которые помогут вам сделать вёрстку качественной и&nbsp;гибкой.
         Главное&nbsp;&mdash; начать им&nbsp;следовать. Со&nbsp;временем их&nbsp;соблюдение войдёт в&nbsp;привычку

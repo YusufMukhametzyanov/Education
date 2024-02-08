@@ -1,5 +1,6 @@
 const featuredItemsJS = JSON.parse(featuredItems);
 
+const body4El = document.querySelector(".body_4");
 const contentItems = document.querySelectorAll(".content1_image1");
 const contentItem2 = document.querySelector(".content2_top_background");
 const contentTopBackground = document.querySelector(".content2_top_background");
@@ -7,52 +8,53 @@ const contentTopBackground = document.querySelector(".content2_top_background");
 let count = 0;
 
 featuredItemsJS.forEach((element) => {
-  contentItems[count].insertAdjacentHTML(
+  body4El.insertAdjacentHTML(
     "beforeend",
-    `<img src="${element.img}" alt="picture_man" class="body4_picture1">
-    <div class="content1_active">
-            <img src="img/content1_active_img.png" alt="" class="content1_active_img">
-            <p class="content1_active_p">Add to Cart</p>
+    `
+    <div class="${element.content}">
+        <div class="content1_image1">
+        <img src="${element.img}" alt="picture_man" class="body4_picture1">
+        <div class="content1_active">
+                <img src="img/content1_active_img.png" alt="" class="content1_active_img">
+                <p class="content1_active_p">Add to Cart</p>
+        </div>
+        </div>
+        <div class="content1_bottom">
+        <div class="content1__bottom">
+        <p class="content1_text1"><strong>${element.title}</strong><br><br></p>
+        <p class="content1_text2">${element.discription}</p><br>
+        <p class="content1_text3">${element.price}</p>
+      </div>
+        </div>
     </div>
+    
 `
   );
 
-  contentItems[count].nextElementSibling.insertAdjacentHTML(
-    "beforeend",
-    `
-  <div class="content1__bottom">
-    <p class="content1_text1"><strong>${element.title}</strong><br><br></p>
-    <p class="content1_text2">${element.discription}</p><br>
-    <p class="content1_text3">${element.price}</p>
-  </div>
-  `
-  );
+  // if (element.img === "img/body4_picture2.png") {
+  //   body4El.insertAdjacentHTML(
+  //     "beforeend",
+  //     `
+  //   <div class="${element.content}">
+  //     <div class="content2_top_background">
+  //       <img src="${element.img}" alt="picture_women" class="content2_top_backgroun_img">
+  //       <div class="content1_active">
+  //           <img src="img/content1_active_img.png" alt="" class="content1_active_img">
+  //           <p class="content1_active_p">Add to Cart</p>
+  //       </div>
+  //     </div>
+  //     <div class="content1_bottom">
+  //       <div class="content1__bottom">
+  //         <p class="content1_text1"><strong>${element.title}</strong><br><br></p>
+  //         <p class="content1_text2">${element.discription}</p><br>
+  //         <p class="content1_text3">${element.price}</p>
+  //       </div>
+  //     </div>
+  //   </div>
 
-  count++;
-
-  if (element.img === "img/body4_picture2.png") {
-    contentItem2.insertAdjacentHTML(
-      "beforeend",
-      `<img src="${element.img}" alt="picture_women" class="content2_top_backgroun_img">
-      <div class="content1_active">
-            <img src="img/content1_active_img.png" alt="" class="content1_active_img">
-            <p class="content1_active_p">Add to Cart</p>
-      </div>
-    `
-    );
-
-    contentItem2.nextElementSibling.insertAdjacentHTML(
-      "beforeend",
-      `
-      <div class="content1__bottom">
-      <p class="content1_text1"><strong>${element.title}</strong><br><br></p>
-      <p class="content1_text2">${element.discription}</p><br>
-      <p class="content1_text3">${element.price}</p>
-    </div>
-    `
-    );
-    count = 1;
-  }
+  //   `
+  //   );
+  // }
 });
 
 const dataProductsJS = JSON.parse(dataProducts);

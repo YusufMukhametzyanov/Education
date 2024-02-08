@@ -84,3 +84,79 @@ elit. Recusandae, ea!</p> </div>
 // btnEl.addEventListener("click", function (e) {
 //   btnEl.textContent = "Text sent";
 // });
+
+//==========HOME WORK===========
+
+//Task 1
+
+/* 
+Ко всем элементам, имеющим класс "dropdown-item" добавить еще один класс "super-dropdown", необходимо использовать методы forEach и querySelectorAll и свойство classList у элементов.
+*/
+
+const dropdownEl = document.querySelectorAll(".dropdown-item");
+
+dropdownEl.forEach((element) => {
+  element.classList.add("super-dropdown");
+});
+
+console.log(dropdownEl);
+
+//Task 2
+
+/* 
+У элемента с классом btn необходимо убрать класс "btn-secondary", если он присутствует у этого элемента, либо добавить, если такого класса у элемента не было.
+*/
+
+const btnEl = document.querySelector(".btn");
+btnEl.classList.remove("btn-secondary");
+
+console.log(btnEl);
+
+//Task 3
+
+/* 
+Необходимо удалить класс "dropdown-menu" у элемента, у которого присутствует класс "menu".
+*/
+
+const menuEl = document.querySelector(".menu");
+menuEl.classList.remove("dropdown-menu");
+console.log(menuEl);
+
+//Task 4
+
+/* 
+Используя метод insertAdjacentHTML добавьте после div'a с классом "dropdown" следующую разметку:
+`<a href="#">link</a>`
+*/
+
+dropdownEl[1].insertAdjacentHTML("afterbegin", '<a href="#">link</a>');
+
+//Task 5
+
+/* 
+У элемента с id "dropdownMenuButton" замените id на "superDropdown".
+*/
+
+const dropdownMenuButtonEl = document.querySelector("#dropdownMenuButton");
+
+dropdownMenuButtonEl.id = "superDropdown";
+console.log(dropdownMenuButtonEl);
+
+//Task 6
+
+/* 
+Добавьте атрибут data-dd со значением 3 элементу у которого существует атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
+*/
+
+console.log(menuEl);
+menuEl.setAttribute("data-dd", 3);
+
+//Task 7
+
+/* 
+Удалите атрибут type у элемента с классом "dropdown-toggle".
+*/
+
+const dropdownToggleEl = document.querySelector(".dropdown-toggle");
+dropdownToggleEl.removeAttribute("type");
+console.log(dropdownToggleEl);

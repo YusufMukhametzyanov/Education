@@ -340,10 +340,12 @@ p {
   display: grid;
   align-items: center;
   justify-items: center;
+  background: #f7e4e2;
 }
 
 .content1_image1:hover {
   opacity: 0.7;
+  background: rgba(58, 56, 56, 0.86);
 }
 
 .content1_active {

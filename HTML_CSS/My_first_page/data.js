@@ -1,5 +1,6 @@
 const featuredItems = `[
   {
+    "content": "content1",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture1.png",
     "discription":
@@ -11,6 +12,7 @@ const featuredItems = `[
     "price": "$52.00"
   },
   {
+    "content": "content2",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture2.png",
     "discription":
@@ -22,6 +24,7 @@ const featuredItems = `[
     "price": "$52.00"
   },
   {
+    "content": "content3",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture3.png",
     "discription":
@@ -33,6 +36,7 @@ const featuredItems = `[
     "price": "$52.00"
   },
   {
+    "content": "content4",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture4.png",
     "discription":
@@ -44,6 +48,7 @@ const featuredItems = `[
     "price": "$52.00"
   },
   {
+    "content": "content5",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture5.png",
     "discription":
@@ -55,6 +60,7 @@ const featuredItems = `[
     "price": "$52.00"
   },
   {
+    "content": "content6",
     "title": "ELLERY X M'O CAPSULE",
     "img": "img/body4_picture6.png",
     "discription":
