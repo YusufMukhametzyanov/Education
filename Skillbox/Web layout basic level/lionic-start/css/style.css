@@ -1,5 +1,32 @@
 /* global */
 
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans Light"), local("OpenSans-Light"),
+		url("../fonts/OpenSans-Light.woff2") format("woff2"),
+		url("../fonts/OpenSans-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans Regular"), local("OpenSans-Regular"),
+		url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+		url("../fonts/OpenSans-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans SamiBold"), local("OpenSans-SamiBold"),
+		url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+		url("../fonts/OpenSans-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -12,7 +39,7 @@ html {
 
 body {
 	min-width: 1200px;
-	font-family: "font", sans-serif;
+	font-family: "Open Sans", sans-serif, serif;
 }
 
 a {
@@ -24,6 +51,11 @@ img {
 	max-width: 100%;
 }
 
+p {
+	font-weight: normal;
+	color: #787878;
+}
+
 .container {
 	margin: 0 auto;
 	padding: 0 15px;
@@ -32,6 +64,10 @@ img {
 
 .section-title {
 	margin: 0 0 40px;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 130%;
+	color: #1c1c1c;
 }
 
 .section-description {
@@ -40,6 +76,7 @@ img {
 
 .section-offset {
 	padding: 87px 0 160px 0;
+	border-bottom: 1px solid #dadada;
 }
 
 .list-reset {
@@ -55,12 +92,22 @@ img {
 	cursor: pointer;
 }
 
+.btn {
+	border-radius: 3px;
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	background: #3172b9;
+}
+
 .flex {
 	display: flex;
 }
 
 .header {
-	padding: 36px 0 0;
+	padding: 36px 0 30px;
+	border-bottom: 1px solid #c4c4c4;
 }
 
 .header-container {
@@ -79,10 +126,36 @@ img {
 	margin-right: 52px;
 }
 
+.header-link {
+	font-weight: 600;
+	font-size: 15px;
+	border-bottom: 2px solid #3474ba;
+	color: #3172b9;
+	transition: all 0.3s;
+}
+
+.header-link:hover {
+	color: #71a7e2;
+	border: none;
+}
+
+.header-link:focus {
+	padding: 3px;
+	border: none;
+	outline: 1px solid #71a7e2;
+	color: #1c1c1c;
+}
+
+.header-link:active {
+}
+
 /* hero */
 
 .hero {
 	padding: 113px 0 134px;
+	background-image: url("../img/background-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .hero-content {
@@ -93,19 +166,45 @@ img {
 
 .hero-title {
 	margin: 0 0 26px;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1c1c1c;
 }
 
 .hero-description {
 	margin: 0 0 34px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 155%;
+	color: #787878;
+}
+
+.hero-btn-secure {
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero-btn {
 	margin: 0 0 14px;
+	padding: 19px 58px;
+}
+
+.hero-secure {
+	padding-left: 27px;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 155%;
+	text-transform: uppercase;
+	color: #787878;
+	background-image: url("../img/secure.svg");
+	background-repeat: no-repeat;
 }
 
 /* services */
 
 .services-title {
+	margin-bottom: 21px;
 	text-align: center;
 }
 
@@ -135,6 +234,8 @@ img {
 
 .services-item-descr {
 	margin: 0;
+	font-size: 14px;
+	line-height: 150%;
 }
 
 /* articles */
@@ -157,20 +258,30 @@ img {
 }
 
 .blog-preview-text {
-	padding: 23px 160px 38px 30px;
+	padding: 23px 156px 38px 30px;
 }
 
 .blog-preview-time {
 	display: block;
 	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 150%;
+	color: #787878;
 }
 
 .blog-preview-title {
 	margin: 0 0 15px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 130%;
+	color: #1c1c1c;
 }
 
 .blog-preview-descr {
 	margin: 0;
+	font-size: 14px;
+	line-height: 150%;
 }
 
 /* clients */
@@ -191,6 +302,8 @@ img {
 .clients-item-descr {
 	margin: 0;
 	padding: 51px 53px 33px 36px;
+	font-size: 14px;
+	line-height: 180%;
 }
 
 .client-item-line {
@@ -201,8 +314,7 @@ img {
 
 .clients-user {
 	align-items: center;
-	margin-top: auto;
-	padding: 0 114px 32px 42px;
+	padding: 28px 0 32px 0;
 }
 
 .clients-avatar {
@@ -213,6 +325,17 @@ img {
 
 .clients-name {
 	margin-bottom: 5px;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 180%;
+	color: #1c1c1c;
+}
+
+.clients-post {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 180%;
+	color: #787878;
 }
 
 /* contacts */
