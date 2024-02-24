@@ -193,7 +193,7 @@ body {
 
 .container-modules {
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 0 50px;
   width: 1170px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -234,10 +234,10 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: 25px;
-  padding: 205px 0 0 25px;
+  padding: 205px 25px 25px;
   width: 572px;
   height: 505px;
-  box-shadow: 1px 1px 20px #eaeaea, -1px -1px 20px #eaeaea;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card-modules:not(:nth-child(even)) {
@@ -289,7 +289,7 @@ body {
 
 .button-modules {
   display: block;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   border: 2px solid #3f2aff;
   width: 274px;
   height: 70px;

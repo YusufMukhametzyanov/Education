@@ -247,7 +247,11 @@ p {
 
 .articles-item {
 	width: 570px;
+}
+
+.blog-preview {
 	border-radius: 5px;
+	overflow: hidden;
 	outline: 1px solid #e4e4e4;
 }
 
@@ -323,6 +327,13 @@ p {
 	margin-right: 17px;
 }
 
+.clients-avatar img {
+	min-width: 100%;
+	min-height: 100%;
+	border: 2px solid #3172b9;
+	border-radius: 100%;
+}
+
 .clients-name {
 	margin-bottom: 5px;
 	font-weight: 600;
@@ -340,14 +351,32 @@ p {
 
 /* contacts */
 
+.contacs-title {
+	margin-bottom: 109px;
+}
+
 .contacts-address {
 	font-style: normal;
 }
 
 .contacts-item {
 	flex-direction: column;
+	padding-top: 48px;
 	width: 370px;
-	outline: 1px solid red;
+	background-repeat: no-repeat;
+	background-size: 29px 29px;
+}
+
+.contact-item-visit-us {
+	background-image: url("../img/visit-us.svg");
+}
+
+.contact-item-call-us {
+	background-image: url("../img/call-us.svg");
+}
+
+.contact-item-email-us {
+	background-image: url("../img/email-us.svg");
 }
 
 .contacts-item:not(:nth-child(3n)) {
@@ -356,14 +385,24 @@ p {
 
 .contacts-item-caption {
 	margin-bottom: 30px;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 180%;
+	color: #1c1c1c;
 }
 
 .contacts-item-text {
 	margin: 0;
+	max-width: 214px;
+	font-size: 14px;
+	line-height: 180%;
 }
 
-.contacts-item-link:not(:last-child) {
-	margin-bottom: 5px;
+.contacts-item-link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 180%;
+	color: #787878;
 }
 
 /* footer */
@@ -381,10 +420,51 @@ p {
 	margin-right: 25px;
 }
 
+.footer-copy {
+	font-weight: 400;
+	font-size: 12px;
+	color: #787878;
+}
+
 .footer-right {
 	align-items: center;
 }
 
+.footer-nav {
+	margin-right: 56px;
+}
+
+.footer-link {
+	font-weight: 600;
+	font-size: 15px;
+	color: #787878;
+}
+
 .footer-item:not(:last-child) {
 	margin-right: 28px;
+}
+
+.social {
+	gap: 32px;
+}
+
+.social-link {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.social-link-twitter {
+	background-image: url("../img/twitter.svg");
+}
+
+.social-link-linkedin {
+	background-image: url("../img/linkedin.svg");
+}
+
+.social-link-mail {
+	background-image: url("../img/mail.svg");
 }
