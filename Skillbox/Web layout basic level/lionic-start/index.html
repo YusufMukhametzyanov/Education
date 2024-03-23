@@ -11,59 +11,53 @@
 
 <body>
 
-	<header id="home" class="header">
-		<div class="container flex header-container">
-			<a class="header-logo" href="#">
+	<header class="header" id="home">
+		<div class="container flex header__container">
+			<a class="header__logo" href="#">
 				<img src="img/lionicLogo.svg" alt="logo">
 			</a>
-			<nav class="header-nav">
-				<ul class="header-ul list-reset flex">
-					<li class="header-list-item"><a href="#hero" class="header-link">Home</a></li>
-					<li class="header-list-item"><a href="#services" class="header-link">Services</a></li>
-					<li class="header-list-item"><a href="#articles" class="header-link">Articles</a></li>
-					<li class="header-list-item"><a href="#clients" class="header-link">Clients</a></li>
-					<li class="header-list-item"><a href="#contacts" class="header-link">Contacts</a></li>
-					<li class="header-list-item"><a href="#join-us" class="header-link">Join us</a></li>
+			<nav class="header__nav nav">
+				<ul class="nav__list list-reset flex">
+					<li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+					<li class="nav__item"><a href="#articles" class="nav__link">Articles</a></li>
+					<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+					<li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+					<li class="nav__item"><a href="#join-us" class="nav__link">Join us</a></li>
 				</ul>
 			</nav>
-			<button class="btn button-header btn-reset">Free trial</button>
+			<button class="header__button btn  btn-reset">Free trial</button>
 		</div>
 	</header>
 
 	<main class="main">
 		<section id="hero" class="hero">
 			<div class="container">
-				<div class="hero-content flex">
-					<h1 class="hero-title">
+				<div class="hero__content flex">
+					<h1 class="hero__title">
 						This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal online
 					</h1>
-					<p class="hero-description text-paragraph-global-style">
+					<p class="hero__description text-paragraph-global-style">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 						tincidunt
 						ut&nbsp;laoreet dolore.
 					</p>
-					<div class="hero-btn-secure flex">
-						<button class="btn hero-btn btn-reset">
-							FREE 30&nbsp;DAY TRIAL
-						</button>
-						<span class="hero-secure">
-							SSL secured connection
-						</span>
+					<div class="hero__wrapper flex">
+						<button class="hero__btn btn  btn-reset">FREE 30&nbsp;DAY TRIAL</button>
+						<span class="hero__secure">SSL secured connection</span>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="services" class="services section-offset">
+		<section class="services section-offset" id="services">
 			<div class="container">
-				<h2 class="section-title services-title">
-					Services
-				</h2>
-				<p class="section-description services-description">
+				<h2 class="services__title section-title">Services</h2>
+				<p class="services__description section-description">
 					Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.
 				</p>
-				<ul class="services-items list-reset flex">
-					<li class="services-item">
-						<svg class="services-item-icon" width="68" height="66" viewBox="0 0 68 66" fill="none"
+				<ul class="services__items list-reset flex">
+					<li class="services__item">
+						<svg class="services__item-icon" width="68" height="66" viewBox="0 0 68 66" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_7_34)">
 								<path
@@ -76,15 +70,13 @@
 								</clipPath>
 							</defs>
 						</svg>
-						<h3 class="services-item-title">
-							Your Legacy
-						</h3>
-						<p class="services-item-descr">
+						<h3 class="services__item-title">Your Legacy</h3>
+						<p class="services__item-descr">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="86" height="64" viewBox="0 0 86 64" fill="none"
+					<li class="services__item">
+						<svg class="services__item-icon" width="86" height="64" viewBox="0 0 86 64" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_7_47)">
 								<path
@@ -97,15 +89,13 @@
 								</clipPath>
 							</defs>
 						</svg>
-						<h3 class="services-item-title">
-							Your Health
-						</h3>
-						<p class="services-item-descr">
+						<h3 class="services__item-title">Your Health</h3>
+						<p class="services__item-descr">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="64" height="64" viewBox="0 0 64 64" fill="none"
+					<li class="services__item">
+						<svg class="services__item-icon" width="64" height="64" viewBox="0 0 64 64" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_7_58)">
 								<path
@@ -119,15 +109,13 @@
 							</defs>
 						</svg>
 
-						<h3 class="services-item-title">
-							Funeral &amp;&nbsp;Memorial
-						</h3>
-						<p class="services-item-descr">
+						<h3 class="services__item-title">Funeral &amp;&nbsp;Memorial</h3>
+						<p class="services__item-descr">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="65" height="65" viewBox="0 0 65 65" fill="none"
+					<li class="services__item">
+						<svg class="services__item-icon" width="65" height="65" viewBox="0 0 65 65" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_7_69)">
 								<path
@@ -140,33 +128,25 @@
 								</clipPath>
 							</defs>
 						</svg>
-						<h3 class="services-item-title">
-							Legal &amp;&nbsp;Financial
-						</h3>
-						<p class="services-item-descr">
+						<h3 class="services__item-title">Legal &amp;&nbsp;Financial</h3>
+						<p class="services__item-descr">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section id="articles" class="articles section-offset">
+		<section class="articles section-offset" id="articles">
 			<div class="container">
-				<h2 class="section-title articles-title">
-					Articles
-				</h2>
-				<ul class="articles-list list-reset flex">
-					<li class="articles-item">
+				<h2 class="articles__title section-title">Articles</h2>
+				<ul class="articles__list list-reset flex">
+					<li class="articles__item">
 						<article class="blog-preview flex">
 							<a href="#" class="blog-preview-link flex">
 								<img src="img/blog-1.jpg" alt="Blog photo 1" class="blog-preview-image">
 								<div class="blog-preview-text">
-									<time class="blog-preview-time" datetime="21-11-15 19:30">
-										15 Nov 2021
-									</time>
-									<h3 class="blog-preview-title">
-										Jurisdiction
-									</h3>
+									<time class="blog-preview-time" datetime="21-11-15 19:30">15 Nov 2021</time>
+									<h3 class="blog-preview-title">Jurisdiction</h3>
 									<p class="blog-preview-descr">
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 									</p>
@@ -174,7 +154,7 @@
 							</a>
 						</article>
 					</li>
-					<li class="articles-item">
+					<li class="articles__item">
 						<article class="blog-preview flex">
 							<a href="#" class="blog-preview-link flex">
 								<img src="img/blog-2.jpg" alt="Blog photo 2" class="blog-preview-image">
@@ -192,7 +172,7 @@
 							</a>
 						</article>
 					</li>
-					<li class="articles-item">
+					<li class="articles__item">
 						<article class="blog-preview flex">
 							<a href="#" class="blog-preview-link flex">
 								<img src="img/blog-3.jpg" alt="Blog photo 3" class="blog-preview-image">
@@ -210,7 +190,7 @@
 							</a>
 						</article>
 					</li>
-					<li class="articles-item">
+					<li class="articles__item">
 						<article class="blog-preview flex">
 							<a href="#" class="blog-preview-link flex">
 								<img src="img/blog-4.jpg" alt="Blog photo 4" class="blog-preview-image">
@@ -233,12 +213,10 @@
 		</section>
 		<section id="clients" class="clients section-offset">
 			<div class="container">
-				<h2 class="section-title clients-title">
-					Clients
-				</h2>
-				<ul class="clients-list list-reset flex">
-					<li class="clients-item">
-						<p class="clients-item-descr">
+				<h2 class="section-title">Clients</h2>
+				<ul class="clients__list list-reset flex">
+					<li class="clients__item">
+						<p class="clients__item-descr">
 							Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
 							consequat, vel
 							illum
@@ -246,23 +224,22 @@
 							dignissim qui
 							blandit odio dignissim qui blandit molestie consequat.
 						</p>
-						<div class="client-item-line"></div>
-						<div class="clients-user flex">
-							<div class="clients-avatar">
+						<div class="clients__user flex">
+							<div class="clients__avatar">
 								<img src="img/client-1.jpg" alt="John Armstrong">
 							</div>
-							<div class="clients-text">
-								<div class="clients-name">
+							<div class="clients__text">
+								<div class="clients__name">
 									John Armstrong
 								</div>
-								<span class="clients-post">
+								<span class="clients__post">
 									Customer
 								</span>
 							</div>
 						</div>
 					</li>
-					<li class="clients-item">
-						<p class="clients-item-descr">
+					<li class="clients__item">
+						<p class="clients__item-descr">
 							Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
 							consequat, vel
 							illum
@@ -270,23 +247,22 @@
 							dignissim qui
 							blandit odio dignissim qui blandit molestie consequat.
 						</p>
-						<div class="client-item-line"></div>
-						<div class="clients-user flex">
-							<div class="clients-avatar">
+						<div class="clients__user flex">
+							<div class="clients__avatar">
 								<img src="img/client-2.jpg" alt="Elizabeth Martin">
 							</div>
-							<div class="clients-text">
-								<div class="clients-name">
+							<div class="clients__text">
+								<div class="clients__name">
 									Elizabeth Martin
 								</div>
-								<span class="clients-post">
+								<span class="clients__post">
 									Customer
 								</span>
 							</div>
 						</div>
 					</li>
-					<li class="clients-item">
-						<p class="clients-item-descr">
+					<li class="clients__item">
+						<p class="clients__item-descr">
 							Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie
 							consequat, vel
 							illum
@@ -294,16 +270,15 @@
 							dignissim qui
 							blandit odio dignissim qui blandit molestie consequat.
 						</p>
-						<div class="client-item-line"></div>
-						<div class="clients-user flex">
-							<div class="clients-avatar">
+						<div class="clients__user flex">
+							<div class="clients__avatar">
 								<img src="img/client-3.jpg" alt="Robin Soutby">
 							</div>
-							<div class="clients-text">
-								<div class="clients-name">
+							<div class="clients__text">
+								<div class="clients__name">
 									Robin Soutby
 								</div>
-								<span class="clients-post">
+								<span class="clients__post">
 									Customer
 								</span>
 							</div>
@@ -314,36 +289,36 @@
 		</section>
 		<section id="contacts" class="contacts section-offset">
 			<div class="container">
-				<h2 class="section-title contacts-title">Contacts</h2>
-				<address class="contacts-address">
-					<ul class="contacts-list list-reset flex">
-						<li class="contacts-item contact-item-visit-us flex">
-							<strong class="contacts-item-caption">
+				<h2 class="contacts__title section-title">Contacts</h2>
+				<address class="contacts__address">
+					<ul class="contacts__list list-reset flex">
+						<li class="contacts__item contact-item-visit flex">
+							<strong class="contacts__item-caption">
 								Visit&nbsp;Us
 							</strong>
-							<p class="contacts-item-text">Duis autem vel eum iriure dolor in&nbsp;hendrerit
+							<p class="contacts__item-text">Duis autem vel eum iriure dolor in&nbsp;hendrerit
 								in&nbsp;vulputate velit.
 							</p>
 						</li>
-						<li class="contacts-item contact-item-call-us flex">
-							<strong class="contacts-item-caption">
+						<li class="contacts__item contact-item-call flex">
+							<strong class="contacts__item-caption">
 								Call&nbsp;Us
 							</strong>
-							<a href="tel:+79876543210" class="contacts-item-link">
+							<a href="tel:+79876543210" class="contacts__item-link">
 								+7 (987) 654-32-10
 							</a>
-							<a href="tel:+71234567890" class="contacts-item-link">
+							<a href="tel:+71234567890" class="contacts__item-link">
 								+7 (123) 456-78-90
 							</a>
 						</li>
-						<li class="contacts-item contact-item-email-us flex">
-							<strong class="contacts-item-caption">
+						<li class="contacts__item contact-item-email flex">
+							<strong class="contacts__item-caption">
 								Email&nbsp;Us
 							</strong>
-							<a href="mailto:example@example.com" class="contacts-item-link">
+							<a href="mailto:example@example.com" class="contacts__item-link">
 								example@example.com
 							</a>
-							<a href="mailto:support@example.com" class="contacts-item-link">
+							<a href="mailto:support@example.com" class="contacts__item-link">
 								support@example.com
 							</a>
 						</li>
@@ -351,17 +326,17 @@
 				</address>
 			</div>
 		</section>
-		<section id="join-us" class="join-us section-offset">
+		<section class="join-us section-offset" id="join-us">
 			<div class="container">
-				<h2 class="section-title join-us-title">Join&nbsp;us</h2>
-				<p class="join-us-description">Take control of&nbsp;your paid subscriptions today!</p>
-				<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
-					<div class="form-top flex">
-						<div class="form-top-left flex">
-							<input class="form-input" type="text" name="name" placeholder="Name" required>
-							<input class="form-input" type="email" name="email" placeholder="E-mail" required>
-							<input class="form-input" type="tel" name="phone" placeholder="Phone" required>
-							<select class="form-input" name="country">
+				<h2 class="join-us__title section-title">Join&nbsp;us</h2>
+				<p class="join-us__description">Take control of&nbsp;your paid subscriptions today!</p>
+				<form class="join-us__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<div class="join-us__form-top flex">
+						<div class="join-us__form-top-left flex">
+							<input class="join-us__form-input" type="text" name="name" placeholder="Name" required>
+							<input class="join-us__form-input" type="email" name="email" placeholder="E-mail" required>
+							<input class="join-us__form-input" type="tel" name="phone" placeholder="Phone" required>
+							<select class="join-us__form-input" name="country">
 								<option value="Country" disabled selected>Country</option>
 								<option value="United Kingdom">United Kingdom</option>
 								<option value="United States">United States</option>
@@ -371,16 +346,16 @@
 								<option value="Estonia">Estonia</option>
 							</select>
 						</div>
-						<div class="form-top-right">
-							<textarea class="textarea-join-us" name="comment" placeholder="Comment"></textarea>
+						<div class="join-us__form-top-right">
+							<textarea class="join-us__form-textarea" name="comment" placeholder="Comment"></textarea>
 						</div>
 					</div>
-					<div class="form-bottom flex">
-						<div class="form-wrapper flex">
-							<button class="btn btn-reset btn-join-us">Get started</button>
-							<label class="checkbox-join-us">
+					<div class="join-us__form-bottom flex">
+						<div class="join-us__form-wrapper flex">
+							<button class="join-us__form-btn btn btn-reset">Get started</button>
+							<label class="join-us__form-checkbox">
 								<input type="checkbox">
-								I&nbsp;agree with the <a class="link-checkbox-join-us" href="#">user agreement</a>
+								I&nbsp;agree with the <a class="join-us__form-link-checkbox" href="#">user agreement</a>
 							</label>
 						</div>
 					</div>
@@ -390,29 +365,29 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container footer-container flex">
-			<div class="footer-left flex">
-				<a href="#home" class="footer-logo">
+		<div class="footer__container container  flex">
+			<div class="footer__left flex">
+				<a href="#home" class="footer__logo">
 					<img src="img/lionicLogo.svg" alt="Logo">
 				</a>
-				<small class="footer-copy">
+				<small class="footer__copy">
 					Copyright &copy;2017. All Right Reserved
 				</small>
 			</div>
-			<div class="footer-right flex">
-				<nav class="footer-nav">
-					<ul class="list-reset footer-list flex">
-						<li class="footer-item">
-							<a href="#" target="_blank" class="footer-link">About Us</a>
+			<div class="footer__right flex">
+				<nav class="footer__nav nav">
+					<ul class="nav__list list-reset  flex">
+						<li class="nav__item">
+							<a href="#" target="_blank" class="nav__link">About Us</a>
 						</li>
-						<li class="footer-item">
-							<a href="#" target="_blank" class="footer-link">Contact Us</a>
+						<li class="nav__item">
+							<a href="#" target="_blank" class="nav__link">Contact Us</a>
 						</li>
-						<li class="footer-item">
-							<a href="#" target="_blank" class="footer-link">Privacy Policy</a>
+						<li class="nav__item">
+							<a href="#" target="_blank" class="nav__link">Privacy Policy</a>
 						</li>
-						<li class="footer-item">
-							<a href="#" target="_blank" class="footer-link">Terms Condition</a>
+						<li class="nav__item">
+							<a href="#" target="_blank" class="nav__link">Terms Condition</a>
 						</li>
 					</ul>
 				</nav>
