@@ -27,6 +27,10 @@
 	font-style: normal;
 }
 
+:root {
+	--gap: 30px;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -38,8 +42,9 @@ html {
 }
 
 body {
-	min-width: 1200px;
+	min-width: 320px;
 	font-family: "Open Sans", sans-serif, serif;
+	font-weight: 400;
 }
 
 a {
@@ -52,14 +57,14 @@ img {
 }
 
 p {
-	font-weight: 400;
 	color: #787878;
 }
 
 .container {
+	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
-	width: 1200px;
 }
 
 .section-title {
@@ -244,14 +249,16 @@ p {
 	text-align: center;
 }
 
-.services__items {
-	column-gap: 30px;
+.services__list {
+	--offsets: 3;
+	gap: var(--gap);
+	flex-wrap: wrap;
 }
 
 .services__item {
 	text-align: center;
 	padding: 62px 30px;
-	width: 270px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	border-radius: 5px;
 	outline: 1px solid #e4e4e4;
 	transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
@@ -298,12 +305,13 @@ p {
 /* articles */
 
 .articles__list {
-	gap: 30px;
 	flex-wrap: wrap;
+	gap: var(--gap);
+	--offsets: 1;
 }
 
 .articles__item {
-	width: 570px;
+	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 }
 
 .blog-preview {
@@ -403,15 +411,16 @@ p {
 /* clients */
 
 .clients__list {
-	gap: 30px;
+	flex-wrap: wrap;
+	gap: var(--gap);
+	--offsets: 2;
 }
 
 .clients__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 370px;
-	min-height: 362px;
+	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 	outline: 1px solid #e4e4e4;
 }
 
@@ -476,10 +485,16 @@ p {
 	font-style: normal;
 }
 
+.contacts__list {
+	flex-wrap: wrap;
+	--offsets: 2;
+	gap: var(--gap);
+}
+
 .contacts__item {
 	flex-direction: column;
 	padding-top: 48px;
-	width: 370px;
+	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 	background-repeat: no-repeat;
 	background-size: 29px 29px;
 }
@@ -494,10 +509,6 @@ p {
 
 .contact-item-email {
 	background-image: url("../img/email-us.svg");
-}
-
-.contacts__item:not(:nth-child(3n)) {
-	margin-right: 30px;
 }
 
 .contacts__item-caption {
