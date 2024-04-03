@@ -1,0 +1,431 @@
+/* global */
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Russo One";
+  src: url("../fonts/RussoOneRegular.woff2") format("woff2"),
+    url("../fonts/RussoOneRegular.woff2") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+:root {
+  --font-family: "Muller", sans-serif, serif;
+  --second-family: "Russo One", sans-serif, serif;
+  --black: #07060b;
+  --grey-light: #ededf2;
+  --red: #d13130;
+  --white: #fff;
+  --grey-dark: #717178;
+  --grey-middle: #95959d;
+  --primary: #46f4db;
+  --primary-active: #57d272;
+  --gray-deep: #37373e;
+  --red-secondary: #ff6f6f;
+  --gap: 32px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 17px;
+  max-width: 1304px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list {
+  gap: var(--gap);
+  font-weight: 700;
+}
+
+.btn {
+  padding: 25px 74px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.logo {
+  outline-offset: 6px;
+}
+
+/* header */
+
+.header {
+  padding: 15px 0;
+  background-color: var(--white);
+}
+
+.header__logo {
+  margin-right: 64px;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.nav__link {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:focus {
+  outline: 2px solid var(--primary-active);
+  outline-offset: 6px;
+}
+
+.nav__link:hover {
+  color: var(--primary);
+}
+
+.nav__link:active {
+  outline: none;
+  color: var(--primary-active);
+}
+
+.header__btn {
+  position: relative;
+  padding: 17px 32px;
+  border-radius: 100px;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--black);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header__btn::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  border: 2px solid var(--primary-active);
+  opacity: 0;
+}
+
+.header__btn:focus::before {
+  opacity: 1;
+}
+
+.header__btn:focus {
+  border: 2px solid var(--primary-active);
+  color: var(--black);
+  background-color: var(--primary);
+}
+
+.header__btn:hover {
+  color: var(--black);
+  background-color: var(--primary);
+}
+
+.header__btn:active {
+  color: var(--black);
+  background-color: var(--primary-active);
+}
+
+.title {
+  font-family: var(--second-family);
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--black);
+}
+
+/* hero */
+
+.hero {
+  padding: 160px 0;
+  background-color: var(--black);
+  background-image: url("../img/stickers_hero.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 9px) top;
+}
+
+.hero__text {
+  width: 50%;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 34px;
+  width: 621px;
+  font-family: var(--second-family);
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: -0.4px;
+  color: var(--white);
+}
+
+.hero__buttons {
+  gap: var(--gap);
+}
+
+.hero__button {
+  outline: none;
+  background: linear-gradient(
+    to top,
+    var(--primary-active) 27.08%,
+    var(--primary) 100%
+  );
+}
+
+.hero__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  color: var(--white);
+  background-color: var(--primary);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero__button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  color: var(--white);
+  background-color: var(--primary-active);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero__button_fill {
+  position: relative;
+  padding: 25px 54px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero__button_stroke {
+  position: relative;
+  padding: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero__button_stroke .hero__button-text {
+  display: inline-block;
+  padding: 20px 49px;
+  border-radius: inherit;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.hero__button-text {
+  position: relative;
+  z-index: 5;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero__button:focus::before {
+  opacity: 1;
+}
+
+.hero__button:focus .hero__button-text {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.hero__button:hover .hero__button-text {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.hero__button_fill:hover::before {
+  opacity: 1;
+}
+
+.hero__button:active::after {
+  opacity: 1;
+}
+
+/* auction */
+
+.auction {
+  padding: 89px 0;
+}
+
+.auction__title {
+  margin: 0;
+  margin-bottom: var(--gap);
+  align-items: center;
+  gap: 14px;
+}
+
+.auction__state {
+  padding: 8px 15px;
+  border: 2px solid currentColor;
+  border-radius: 100px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--red);
+}
+
+.auction__state::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: currentColor;
+}
+
+.auction__content {
+  gap: var(--gap);
+}
+
+.auction__info {
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap);
+  width: 788px;
+}
+
+.auction__owner {
+  align-items: center;
+  padding: 11px 16px;
+  border-radius: 23px;
+  background: var(--grey-light);
+}
+
+.auction-owner__avatar {
+  margin-right: 16px;
+}
+
+.auction-owner__nickname {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.auction__subtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.auction__action {
+  gap: var(--gap);
+}
+
+.auction__bet {
+  flex-direction: column;
+  align-items: start;
+  padding: 32px 57px 32px 32px;
+  border-radius: 40px;
+  background: var(--grey-light);
+}
+
+.auction__caption {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.auction__price {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--black);
+}
+
+.auction__price-dollars {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--grey-middle);
+}
+
+.auction-timing {
+  flex-direction: column;
+  align-items: start;
+  padding: 32px 197px 32px 32px;
+  border-radius: 40px;
+  background-color: var(--black);
+  background-image: url("../img/alarm-clock.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 32px);
+}
+
+.auction__caption_white {
+  color: var(--white);
+}
+
+.auction-timing__content {
+  gap: 26px;
+}
+
+.auction-timing__part {
+  flex-direction: column;
+  gap: 6px;
+  color: var(--white);
+}
+
+.auction-timing__numbers {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--white);
+}
+
+.auction-timing__measure {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+}
