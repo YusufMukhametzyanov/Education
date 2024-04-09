@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Aura - коллекция стикеров</title>
 </head>
 
@@ -89,7 +90,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn_fill">
+            <button class="auction__info-btn btn btn_fill">
               <span class="btn__text">Сделать ставку</span>
             </button>
           </div>
@@ -247,27 +248,54 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="new-stickers__items flex">
-                <img src="img/new-sticker-1.png" alt="Изображение стикера">
-                <img src="img/new-sticker-2.png" alt="">
-                <img src="img/new-sticker-3.png" alt="">
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-1.png">
+                  <img src="img/new-sticker-1.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-2.png">
+                  <img src="img/new-sticker-2.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-3.png">
+                  <img src="img/new-sticker-3.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new-stickers__items flex">
-                <img src="img/new-sticker-4.png" alt="Изображение стикера">
-                <img src="img/new-sticker-5.png" alt="">
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-4.png">
+                  <img src="img/new-sticker-4.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-5.png">
+                  <img src="img/new-sticker-5.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new-stickers__items flex">
-                <img src="img/new-sticker-6.png" alt="Изображение стикера">
-                <img src="img/new-sticker-7.png" alt="">
-                <img src="img/new-sticker-8.png" alt="">
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-6.png">
+                  <img src="img/new-sticker-6.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-7.png">
+                  <img src="img/new-sticker-7.png" alt="Изображение стикера">
+                </picture>
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-8.png">
+                  <img src="img/new-sticker-8.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="new-stickers__items flex">
-                <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                <picture>
+                  <source media="(max-width: 1440px)" srcset="img/new-sticker-tablet-9.png">
+                  <img src="img/new-sticker-9.png" alt="Изображение стикера">
+                </picture>
               </div>
             </div>
           </div>
@@ -304,12 +332,12 @@
             <p class="become-author__description become-author__description-bottom">
               Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме. Если наши
               кураторы
-              решат, что нам по&nbsp;пути, то&nbsp;мы обязательно свяжемся с&nbsp;тобой и&nbsp;обговорим условия
+              решат, что нам по&nbsp;пути, то&nbsp;мы обязательно свяжемся с&nbsp;тобой и обговорим условия
               сотрудничества! <b>Удачи!</b>
             </p>
             <img class="become-author__img" src="img/become-author.png" alt="" aria-hidden="true">
           </div>
-          <div class="become-author__form form flex">
+          <form class="become-author__form-desktop form flex" method="get">
             <label class="file flex">
               <input class="file__input" type="file" accept="image/*">
               <span class="file__icon flex">
@@ -320,11 +348,38 @@
               </span>
               <span class="file__content">Прикрепить работы (.jpeg&nbsp;/ .png)</span>
             </label>
-            <input class="form-input form-input_light" type="text" placeholder="@telegram_nickname"
-              name="telegram_nickname">
+            <input class="form-input form-input_light" type="email" placeholder="@telegram_nickname"
+              name="telegram_nickname" required>
             <button class="become-author__btn btn btn_fill">
               <span class="btn__text">Отправить</span>
             </button>
+          </form>
+          <div class="become-author__form-tablet">
+            <div class="become-author__bottom-tablet-img flex">
+              <img src="img/become-author-tablet-top.png" alt="" aria-hidden="true">
+              <img class="become-author-tablet-middle-img" src="img/become-author-tablet-middle.png" alt=""
+                aria-hidden="true">
+              <img class="become-author-tablet-bottom-img" src="img/become-author-tablet-bottom.png" alt=""
+                aria-hidden="true">
+            </div>
+            <form class="become-author__form form flex" method="get">
+              <label class="file flex">
+                <input class="file__input" type="file" accept="image/*">
+                <span class="file__icon flex">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.4081 16.5919H40V23.4081H23.4081V40H16.5919V23.4081H0V16.5919H16.5919V0H23.4081V16.5919Z"
+                      fill="#EDEDF2" />
+                  </svg>
+                </span>
+                <span class="file__content">Прикрепить работы (.jpeg&nbsp;/ .png)</span>
+              </label>
+              <input class="form-input form-input_light" type="email" placeholder="@telegram_nickname"
+                name="telegram_nickname" required>
+              <button class="become-author__btn btn btn_fill">
+                <span class="btn__text">Отправить</span>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -332,13 +387,13 @@
     <section class="top-sales">
       <div class="container">
         <h2 class="top-sales__title title">Топ продаж</h2>
-        <ul class="top-sales__list">
+        <ul class="top-sales__list list-reset flex">
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-1.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -352,11 +407,11 @@
             </article>
           </li>
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-2.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -370,11 +425,11 @@
             </article>
           </li>
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-3.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -388,11 +443,11 @@
             </article>
           </li>
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-4.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -406,11 +461,11 @@
             </article>
           </li>
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-5.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -424,11 +479,11 @@
             </article>
           </li>
           <li class="top-sales__item">
-            <article class="top-product">
+            <article class="top-product flex">
               <div class="top-product__img">
                 <img src="img/top-product-6.png" alt="Изображение стикера из топа продаж">
               </div>
-              <div class="top-product__info">
+              <div class="top-product__info flex">
                 <div class="top-product__owner auction-owner flex">
                   <img class="top-product__owner-img" src="img/top-product-onwer-1.png"
                     alt="Изображение владельца стикера">
@@ -445,9 +500,9 @@
       </div>
     </section>
     <section class="top-info">
-      <div class="container">
+      <div class="top-info__container container">
         <h2 class="top-info__title">Для попадания в&nbsp;топ необходимо:</h2>
-        <ul class="top-info__list">
+        <ul class="top-info__list list-reset flex">
           <li class="top-info__item" style="background-image: url('img/top-info-1.svg');">Минимум пять опубликованных
             работ</li>
           <li class="top-info__item" style="background-image: url('img/top-info-2.svg');">Инвайт трём коллегам
@@ -459,19 +514,19 @@
   </main>
   <footer class="footer">
     <div class="footer__top">
-      <div class="container">
+      <div class="footer__container container">
         <a class="footer__logo logo" href="#">
           <img src="img/logo.svg" alt="Логотип компании">
         </a>
         <ul class="nav-list list-reset flex">
           <li class="footer__item">
-            <a href="" class="footer__link">Соглашение</a>
+            <a href="#" class="footer__link">Соглашение</a>
           </li>
           <li class="footer__item">
-            <a href="" class="footer__link">Лицензия</a>
+            <a href="#" class="footer__link">Лицензия</a>
           </li>
           <li class="footer__item">
-            <a href="" class="footer__link">FAQ</a>
+            <a href="#" class="footer__link">FAQ</a>
           </li>
         </ul>
       </div>
