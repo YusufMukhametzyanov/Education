@@ -64,9 +64,6 @@ p {
 
 .container {
 	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
 }
 
 .section-title {
@@ -202,12 +199,6 @@ p {
 	background-position: 50%;
 }
 
-.hero__content {
-	flex-direction: column;
-	align-items: start;
-	max-width: 50%;
-}
-
 .hero__title {
 	margin: 0 0 26px;
 	font-weight: 300;
@@ -226,7 +217,7 @@ p {
 
 .hero__wrapper {
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 }
 
 .hero__btn {
@@ -263,7 +254,6 @@ p {
 .services__list {
 	--offsets: 3;
 	gap: var(--gap);
-	flex-wrap: wrap;
 }
 
 .services__item {
@@ -433,6 +423,7 @@ p {
 .clients__item {
 	display: flex;
 	flex-direction: column;
+	padding: 0;
 	align-items: center;
 	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 	outline: 1px solid #e4e4e4;
