@@ -252,14 +252,23 @@ p {
 }
 
 .services__list {
-	--offsets: 3;
-	gap: var(--gap);
+	/* --offsets: 3; */
+	row-gap: 30px;
+}
+
+.services-padding-left-reset:nth-child(4n + 1) {
+	padding-left: 0;
+}
+
+.services-padding-left-reset:nth-child(4n + 4) {
+	padding-right: 0;
 }
 
 .services__item {
 	text-align: center;
-	padding: 62px 30px;
-	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+	padding: 62px 30px 0;
+	/* width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1)); */
+	min-height: 320px;
 	border-radius: 5px;
 	outline: 1px solid #e4e4e4;
 	transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
@@ -306,13 +315,22 @@ p {
 /* articles */
 
 .articles__list {
-	flex-wrap: wrap;
-	gap: var(--gap);
-	--offsets: 1;
+	row-gap: var(--gap);
+	/* --offsets: 1; */
 }
 
 .articles__item {
-	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
+	/* width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1)); */
+}
+
+.articles-padding-reset-left:nth-child(odd) {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.articles-padding-reset-left:nth-child(even) {
+	padding-right: 0;
+	padding-left: 15px;
 }
 
 .blog-preview {
@@ -322,6 +340,7 @@ p {
 }
 
 .blog-preview-link {
+	width: 100%;
 	transition: background-color 0.3s ease-in-out;
 }
 
@@ -415,17 +434,24 @@ p {
 /* clients */
 
 .clients__list {
-	flex-wrap: wrap;
-	gap: var(--gap);
-	--offsets: 2;
+	/* flex-wrap: wrap; */
+	row-gap: var(--gap);
+	/* --offsets: 2; */
+}
+
+.clients-padding-reset-left:nth-child(3n + 1) {
+	padding-left: 0;
+}
+
+.clients-padding-reset-left:nth-child(3n + 3) {
+	padding-right: 0;
 }
 
 .clients__item {
 	display: flex;
 	flex-direction: column;
-	padding: 0;
 	align-items: center;
-	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
+	/* width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1)); */
 	outline: 1px solid #e4e4e4;
 }
 
@@ -491,9 +517,17 @@ p {
 }
 
 .contacts__list {
-	flex-wrap: wrap;
-	--offsets: 2;
-	gap: var(--gap);
+	/* flex-wrap: wrap;
+	--offsets: 2; */
+	row-gap: var(--gap);
+}
+
+.contacts-padding-left-reset:nth-child(3n + 1) {
+	padding-left: 0;
+}
+
+.contacts-padding-left-reset:nth-child(3n + 3) {
+	padding-right: 0;
 }
 
 .contacts__item {

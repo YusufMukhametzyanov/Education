@@ -72,15 +72,6 @@
 		bottom: 13px;
 	}
 
-	.hero__content {
-		max-width: 75%;
-	}
-
-	.services__list {
-		justify-content: center;
-		--offsets: 2;
-	}
-
 	.blog-preview {
 		height: 100%;
 	}
@@ -99,6 +90,41 @@
 		--offsets: 1;
 	}
 
+	.clients-padding-reset-left:nth-child(odd) {
+		padding-left: 0;
+	}
+
+	.clients-padding-reset-left:nth-child(even) {
+		padding-right: 0;
+	}
+
+	.services__list {
+		row-gap: 20px;
+	}
+
+	.services-padding-left-reset:nth-child(odd) {
+		padding-left: 0;
+		padding-right: 10px;
+	}
+
+	.services-padding-left-reset:nth-child(even) {
+		padding-right: 0;
+		padding-left: 10px;
+	}
+
+	.articles-padding-reset-left:nth-child(odd),
+	.articles-padding-reset-right:nth-child(even) {
+		padding: 0;
+	}
+
+	.contacts-padding-left-reset:nth-child(odd) {
+		padding-left: 0;
+	}
+
+	.contacts-padding-left-reset:nth-child(even) {
+		padding-right: 0;
+	}
+
 	.footer__container {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -107,12 +133,21 @@
 }
 
 @media (max-width: 768px) {
-	.services__list {
+	/* .services__list {
 		--offsets: 1;
+	} */
+
+	/* .articles__list {
+		--offsets: 0;
+	} */
+
+	.clients__list {
+		row-gap: 15px;
 	}
 
-	.articles__list {
-		--offsets: 0;
+	.clients-padding-reset-left:nth-child(odd),
+	.clients-padding-reset-left:nth-child(even) {
+		padding: 0;
 	}
 
 	.blog-preview-text {
@@ -122,10 +157,6 @@
 
 	.blog-preview-descr {
 		max-width: 100%;
-	}
-
-	.form__ {
-		padding: 0;
 	}
 
 	.footer__nav {
@@ -142,17 +173,9 @@
 		background-position: 55%;
 	}
 
-	.services__item {
-		padding: 31px 15px;
-	}
-
 	.services__item-icon {
 		margin-bottom: 13px;
 		height: 42px;
-	}
-
-	.services__item-title {
-		font-size: 16px;
 	}
 
 	.services__item-descr {
@@ -163,8 +186,9 @@
 		--offsets: 0;
 	}
 
-	.contacts__list {
-		flex-direction: column;
+	.contacts-padding-left-reset:nth-child(odd),
+	.contacts-padding-left-reset:nth-child(even) {
+		padding: 0;
 	}
 
 	.contacts__item {
@@ -216,10 +240,6 @@
 	.hero {
 		padding: 31px 0 2px;
 		background-image: none;
-	}
-
-	.hero__content {
-		min-width: 100%;
 	}
 
 	.hero__title {
@@ -297,6 +317,7 @@
 	.services__item-title {
 		margin-bottom: 3px;
 		line-height: 21px;
+		font-size: 16px;
 	}
 
 	.blog-preview {
@@ -351,10 +372,6 @@
 		margin-top: -3px;
 		margin-bottom: 0;
 		line-height: 140%;
-	}
-
-	.contacts__list {
-		gap: 30px;
 	}
 
 	.contacts__item {
